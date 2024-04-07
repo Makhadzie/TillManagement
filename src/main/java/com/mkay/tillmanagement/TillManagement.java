@@ -5,8 +5,6 @@
 package com.mkay.tillmanagement;
 
  //* @author makhadzinevuwari
- 
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -30,9 +28,9 @@ public class TillManagement {
 
         // transactions
         try (BufferedReader reader = new BufferedReader
-        (new FileReader("/Users/makhadzinevuwari/Downloads/TDS/input.txt"));
+        (new FileReader("/Users/makhadzinevuwari/NetBeansProjects/TillManagement/input.txt"));
              PrintWriter writer = new PrintWriter
-        (new FileWriter("/Users/makhadzinevuwari/Downloads/TDS/input.txt")))
+        (new FileWriter("/Users/makhadzinevuwari/NetBeansProjects/TillManagement/input.txt")))
             
         {
             String line;
@@ -83,7 +81,7 @@ public class TillManagement {
             writer.println("Amount Left in Till: R" + calculateAmountInTill(till));
         }
         catch (IOException e) 
-       
+
         {
             e.printStackTrace();
         }
